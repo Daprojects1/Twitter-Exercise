@@ -1,0 +1,336 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+  overflow-x: hidden;
+}
+
+.skip-link {
+  display: none;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+
+/* NAVIGATION */
+.main-nav {
+  width: 100vw;
+  height: 90px;
+  position: sticky;
+  padding: 20px 50px 20px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.nav-ul {
+  padding: 0 20px 0;
+}
+.main-nav li {
+  list-style: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgb(119, 118, 118);
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a {
+  transition: padding 0.5;
+}
+a:hover {
+  color: #1da1f2;
+  padding: 5px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.nav-ul li {
+  padding: 0 20px;
+}
+
+.main-nav img {
+  width: 25px;
+  height: 25px;
+}
+
+.main-btn {
+  display: none;
+  width: 70px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.btn1:hover {
+  color: #1da1f2;
+  background-color: white;
+  border: 1px solid #1da1f2;
+}
+.main-content {
+  width: 100%;
+}
+
+.main-wrapper {
+  margin: 7px auto;
+  max-width: 1190px;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+/* PROFILE CARD  */
+.profile-card {
+  width: 95%;
+  height: 275px;
+  background-color: white;
+}
+
+.profile-card .main-btn {
+  display: inline-block;
+  align-self: center;
+}
+.column {
+  flex-direction: column;
+}
+.img-card {
+  background-color: black;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.img-card img {
+  width: 180px;
+}
+
+/* CARD IMG AND TEXT STYLES*/
+.card-img-txt {
+  position: relative;
+  font-size: 0.85rem;
+  justify-content: space-between;
+}
+.double-text {
+  width: 55px;
+  padding-top: 5px;
+  margin-right: 110px;
+}
+
+.double-text .uno {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.double-text .deux {
+  padding-top: 2px;
+  margin: 0;
+}
+
+.card-img-txt img {
+  width: 73px;
+  height: 73px;
+  left: 75px;
+  z-index: 100;
+  position: relative;
+  top: -30px;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+
+/* USER INFORMATION STYLES e.g TWEETS, FOLLOWING , FOLLOWERS & THEIR NUMBERS */
+
+.list-info {
+  list-style: none;
+  display: grid;
+  padding: 0px 25px 14px 32px;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+}
+
+.list-info p {
+  margin: 0;
+}
+
+.text-p {
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: rgb(99, 97, 97);
+  padding: 3px;
+}
+
+.text-num {
+  font-weight: 500;
+  color: #1da1f2;
+  padding: 0 10px;
+}
+
+/* COMMENT SECTION STYLES */
+
+/* comment-sec is the entire area of comments */
+.comments-sec {
+  margin: 10px 10px 0;
+}
+
+/* images of the comment photos and who to follow section */
+.img-cont img,
+.img-follow img {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+.comments-sec {
+  max-width: 610px;
+  flex-direction: column;
+}
+/* each individual comment area styles */
+.comments {
+  background-color: white;
+  padding: 15px;
+}
+
+.brder-btm {
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+/* styles for the entire name section in comments */
+.name-comment p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* naming issue but these are the styles for just the first part, the actual commentor name */
+.comment-name {
+  padding: 15px 1px 5px 7px;
+}
+
+.word-comments {
+  padding-left: 7px;
+}
+
+.light-grey {
+  color: rgb(100, 100, 100);
+}
+
+/* WHO TO FOLLOW SECTION */
+.follow {
+  margin-top: 10px;
+  padding: 0 30px;
+}
+
+.follow h2 {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+.img-follow {
+  padding-bottom: 15px;
+}
+.f-img {
+  padding-top: 20px;
+  margin-right: 10px;
+}
+.btn-color2 {
+  color: #1da1f2;
+  background-color: white;
+  border: 1px solid #1da1f2;
+}
+
+.btn-color2:hover {
+  color: white;
+  background-color: #1da1f2;
+}
+
+/* MEDIA QUERRIES */
+@media screen and (min-width: 554px) {
+  .main-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .profile-card {
+    max-width: 280px;
+    align-self: flex-start;
+  }
+  .fs {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .card-img-txt img {
+    left: 15px;
+  }
+  .double-text {
+    margin-right: 85px;
+  }
+  .comments-sec {
+    margin: 10px 10px 0 10px;
+  }
+  .list-info {
+    padding: 0px 25px 14px 25px;
+  }
+  .follow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 675px) {
+  .double-text {
+    margin-right: 120px;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .main-nav {
+    height: 30px;
+  }
+  .nav-container {
+    flex-direction: row;
+    height: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+  }
+  .main-nav img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .main-nav .main-btn {
+    display: inline-block;
+  }
+  .user-info .main-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .follow {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
